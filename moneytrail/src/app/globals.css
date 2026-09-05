@@ -3,7 +3,152 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* Brand & Primary */
+    --color-primary: 23 23 23;
+    --color-on-primary: 255 255 255;
+    /* Text */
+    --color-ink: 23 23 23;
+    --color-body: 77 77 77;
+    --color-mute: 143 143 143;
+    --color-faint: 161 161 161;
+    /* Surface */
+    --color-hairline: 235 235 235;
+    --color-hairline-soft: 242 242 242;
+    --color-canvas: 250 250 250;
+    --color-canvas-elevated: 255 255 255;
+    /* Links */
+    --color-link: 0 112 243;
+    --color-link-deep: 7 97 209;
+    --color-link-soft: 211 229 255;
+    /* Semantic */
+    --color-error: 238 0 0;
+    --color-error-deep: 197 0 0;
+    --color-warning: 245 166 35;
+    --color-warning-soft: 255 239 207;
+    --color-warning-deep: 171 87 10;
+    /* Accent */
+    --color-violet: 121 40 202;
+    --color-violet-soft: 216 204 241;
+    --color-cyan: 80 227 194;
+    --color-cyan-soft: 170 255 236;
+    --color-pink: 255 0 128;
+    --color-magenta: 235 54 127;
+    /* Positive/Negative */
+    --color-positive: 0 112 243;
+    --color-positive-deep: 7 97 209;
+    --color-negative: 238 0 0;
+    --color-negative-deep: 197 0 0;
+    --color-negative-bg: 254 242 242;
+    --color-primary-pale: 245 245 245;
+  }
+
+  .dark {
+    /* Brand & Primary */
+    --color-primary: 237 237 237;
+    --color-on-primary: 23 23 23;
+    /* Text */
+    --color-ink: 237 237 237;
+    --color-body: 161 161 161;
+    --color-mute: 107 107 107;
+    --color-faint: 82 82 82;
+    /* Surface */
+    --color-hairline: 38 38 38;
+    --color-hairline-soft: 26 26 26;
+    --color-canvas: 10 10 10;
+    --color-canvas-elevated: 20 20 20;
+    /* Links */
+    --color-link: 50 145 255;
+    --color-link-deep: 109 179 248;
+    --color-link-soft: 26 42 58;
+    /* Semantic */
+    --color-error: 255 77 77;
+    --color-error-deep: 255 128 128;
+    --color-warning: 245 166 35;
+    --color-warning-soft: 42 32 0;
+    --color-warning-deep: 255 195 107;
+    /* Accent */
+    --color-violet: 155 89 182;
+    --color-violet-soft: 31 21 48;
+    --color-cyan: 80 227 194;
+    --color-cyan-soft: 10 42 32;
+    --color-pink: 255 77 166;
+    --color-magenta: 240 96 154;
+    /* Positive/Negative */
+    --color-positive: 50 145 255;
+    --color-positive-deep: 109 179 248;
+    --color-negative: 255 77 77;
+    --color-negative-deep: 255 128 128;
+    --color-negative-bg: 42 10 10;
+    --color-primary-pale: 26 26 26;
+  }
+
   * {
     font-feature-settings: "calt";
   }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ebebeb;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4d4d4;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Prevent flash of wrong theme */
+html {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+/* Line clamp utility */
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+/* Hide scrollbar for mobile nav */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }

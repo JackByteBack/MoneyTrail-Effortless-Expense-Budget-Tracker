@@ -1,22 +1,15 @@
 "use client";
 
-import { useState } from "react";
 import { Plus } from "lucide-react";
-import { QuickAddModal } from "./QuickAddModal";
 
-export function FloatingActionButton() {
-  const [isOpen, setIsOpen] = useState(false);
-
+export function FloatingActionButton({ onClick }: { onClick: () => void }) {
   return (
-    <>
-      <button
-        onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 w-14 h-14 bg-primary text-on-primary rounded-full shadow-lg flex items-center justify-center hover:scale-110 active:scale-95 transition-transform z-40"
-      >
-        <Plus className="w-6 h-6" />
-      </button>
-
-      {isOpen && <QuickAddModal onClose={() => setIsOpen(false)} />}
-    </>
+    <button
+      onClick={onClick}
+      className="md:hidden fixed bottom-20 right-4 z-40 w-14 h-14 bg-ink text-on-primary rounded-full shadow-lg hover:opacity-90 transition-opacity flex items-center justify-center safe-area-bottom"
+      aria-label="Add transaction"
+    >
+      <Plus className="w-6 h-6" />
+    </button>
   );
 }

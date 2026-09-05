@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { Navbar } from "@/components/ui/Navbar";
-import { FloatingActionButton } from "@/components/transactions/FloatingActionButton";
+import { FABWithModal } from "@/components/transactions/FABWithModal";
 
 export default async function ProtectedLayout({
   children,
@@ -19,10 +19,12 @@ export default async function ProtectedLayout({
   }
 
   return (
-    <div className="min-h-screen bg-canvas-soft">
+    <div className="min-h-screen bg-canvas">
       <Navbar user={user} />
-      <main className="pt-16 pb-24 px-4 max-w-2xl mx-auto">{children}</main>
-      <FloatingActionButton />
+      <main className="pt-14 pb-20 md:pb-8 px-4 max-w-4xl mx-auto">
+        {children}
+      </main>
+      <FABWithModal />
     </div>
   );
 }

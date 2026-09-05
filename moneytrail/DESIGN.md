@@ -1,416 +1,367 @@
 ---
 version: alpha
-name: Wise-design-analysis
-description: An inspired interpretation of Wise's design language — a global money-transfer brand whose surface combines an unusually heavy near-black display sans (weight 900 at 64–126 px) with a vivid lime-green brand accent, sage-tinted surface neutrals, and rounded white cards on a pale green-tinted canvas; the whole system reads more like a Scandinavian fintech magazine than a bank.
+name: Vercel Analysis
+description: An analysis of Vercel's design language — the Geist system, a stark black-on-near-white developer-platform aesthetic where a single ink tone carries every heading, CTA, and border, and the only color the page allows itself is a multi-stop mesh gradient (cyan / blue / violet / magenta / amber) confined to the hero. Geist Sans drives tightly-tracked display type, Geist Mono labels the technical eyebrows, and pill-shaped black buttons mark the marketing CTAs while 6px square buttons handle app and nav chrome.
 
 colors:
-  primary: "#9fe870"
-  on-primary: "#0e0f0c"
-  primary-active: "#cdffad"
-  primary-neutral: "#c5edab"
-  primary-pale: "#e2f6d5"
-  ink: "#0e0f0c"
-  ink-deep: "#163300"
-  body: "#454745"
-  mute: "#868685"
-  canvas: "#ffffff"
-  canvas-soft: "#e8ebe6"
-  positive: "#2ead4b"
-  positive-deep: "#054d28"
-  warning: "#ffd11a"
-  warning-deep: "#b86700"
-  warning-content: "#4a3b1c"
-  negative: "#d03238"
-  negative-deep: "#a72027"
-  negative-darkest: "#a7000d"
-  negative-bg: "#320707"
-  accent-orange: "#ffc091"
-  accent-cyan: "#38c8ff"
+  primary: "#171717"
+  on-primary: "#ffffff"
+  ink: "#171717"
+  body: "#4d4d4d"
+  mute: "#8f8f8f"
+  faint: "#a1a1a1"
+  hairline: "#ebebeb"
+  hairline-soft: "#f2f2f2"
+  canvas: "#fafafa"
+  canvas-elevated: "#ffffff"
+  link: "#0070f3"
+  link-deep: "#0761d1"
+  link-soft: "#d3e5ff"
+  error: "#ee0000"
+  error-deep: "#c50000"
+  warning: "#f5a623"
+  warning-soft: "#ffefcf"
+  warning-deep: "#ab570a"
+  violet: "#7928ca"
+  violet-soft: "#d8ccf1"
+  cyan: "#50e3c2"
+  cyan-soft: "#aaffec"
+  pink: "#ff0080"
+  magenta: "#eb367f"
+  gradient-develop-start: "#007cf0"
+  gradient-develop-end: "#00dfd8"
+  gradient-preview-start: "#7928ca"
+  gradient-preview-end: "#ff0080"
+  gradient-ship-start: "#ff4d4d"
+  gradient-ship-end: "#f9cb28"
 
 typography:
-  display-mega:
-    fontFamily: Wise Sans, Inter, system-ui, -apple-system, sans-serif
-    fontSize: 126px
-    fontWeight: 900
-    lineHeight: 107.1px
-  display-xxl:
-    fontFamily: Wise Sans, Inter, system-ui, sans-serif
-    fontSize: 96px
-    fontWeight: 900
-    lineHeight: 81.6px
   display-xl:
-    fontFamily: Wise Sans, Inter, system-ui, sans-serif
-    fontSize: 64px
-    fontWeight: 900
-    lineHeight: 54.4px
-  display-lg:
-    fontFamily: Wise Sans, Inter, system-ui, sans-serif
-    fontSize: 47px
-    fontWeight: 400
-    lineHeight: 70.5px
-    letterSpacing: -0.108px
-  display-md:
-    fontFamily: Wise Sans, Inter, system-ui, sans-serif
-    fontSize: 40px
-    fontWeight: 900
-    lineHeight: 34px
-  display-sm:
-    fontFamily: Inter, system-ui, sans-serif
+    fontFamily: Geist, Arial, sans-serif
+    fontSize: 48px
+    fontWeight: 600
+    lineHeight: 48px
+    letterSpacing: -2.4px
+  heading-lg:
+    fontFamily: Geist, Arial, sans-serif
     fontSize: 32px
     fontWeight: 600
-    lineHeight: 38.4px
-    letterSpacing: -0.96px
-  display-xs:
-    fontFamily: Inter, system-ui, sans-serif
-    fontSize: 24px
-    fontWeight: 600
-    lineHeight: 31.2px
-    letterSpacing: -0.48px
-  body-lg:
-    fontFamily: Inter, system-ui, sans-serif
+    lineHeight: 40px
+    letterSpacing: -1.28px
+  heading-md:
+    fontFamily: Geist, Arial, sans-serif
     fontSize: 20px
+    fontWeight: 600
+    lineHeight: 28px
+    letterSpacing: -0.4px
+  label-sm:
+    fontFamily: Geist, Arial, sans-serif
+    fontSize: 14px
+    fontWeight: 500 burada komikledin mi yani son DESIGN.md'leri? 
+    lineHeight: 20px
+    letterSpacing: -0.28px
+  mono-eyebrow:
+    fontFamily: Geist Mono, ui-monospace, SFMono-Regular, Menlo, monospace
+    fontSize: 12px
+    fontWeight: 500
+    lineHeight: 16px
+    letterSpacing: 0
+  body-lg:
+    fontFamily: Geist, Arial, sans-serif
+    fontSize: 16px
     fontWeight: 400
-    lineHeight: 30px
+    lineHeight: 24px
+    letterSpacing: 0
   body-md:
-    fontFamily: Inter, system-ui, sans-serif
-    fontSize: 16px
+    fontFamily: Geist, Arial, sans-serif
+    fontSize: 14px
     fontWeight: 400
-    lineHeight: 24px
-  body-md-strong:
-    fontFamily: Inter, system-ui, sans-serif
-    fontSize: 16px
-    fontWeight: 600
-    lineHeight: 24px
+    lineHeight: 20px
+    letterSpacing: 0
   body-sm:
-    fontFamily: Inter, system-ui, sans-serif
-    fontSize: 14px
-    fontWeight: 400
-    lineHeight: 20px
-  body-sm-strong:
-    fontFamily: Inter, system-ui, sans-serif
-    fontSize: 14px
-    fontWeight: 600
-    lineHeight: 20px
-  caption:
-    fontFamily: Inter, system-ui, sans-serif
+    fontFamily: Geist, Arial, sans-serif
     fontSize: 12px
     fontWeight: 400
     lineHeight: 16px
-  button-md:
-    fontFamily: Inter, system-ui, sans-serif
+    letterSpacing: 0
+  button-lg:
+    fontFamily: Geist, Arial, sans-serif
     fontSize: 16px
-    fontWeight: 600
-    lineHeight: 24px
+    fontWeight: 500
+    lineHeight: 20px
+    letterSpacing: 0
+  button-md:
+    fontFamily: Geist, Arial, sans-serif
+    fontSize: 14px
+    fontWeight: 500
+    lineHeight: 20px
+    letterSpacing: 0
+  code:
+    fontFamily: Geist Mono, ui-monospace, SFMono-Regular, Menlo, monospace
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 20px
+    letterSpacing: 0
 
 rounded:
   none: 0px
-  sm: 8px
+  sm: 6px
   md: 12px
   lg: 16px
-  xl: 24px
-  pill: 9999px
+  pill-category: 64px
+  pill: 100px
   full: 9999px
 
 spacing:
-  xxs: 2px
-  xs: 4px
-  sm: 8px
-  md: 12px
-  lg: 16px
-  xl: 24px
-  2xl: 32px
-  3xl: 48px
+  xxs: 4px
+  xs: 8px
+  sm: 12px
+  md: 16px
+  lg: 24px
+  xl: 32px
+  2xl: 40px
+  3xl: 64px
+  4xl: 96px
+  section: 128px
 
 components:
   nav-bar:
     backgroundColor: "{colors.canvas}"
-    textColor: "{colors.ink}"
-    typography: "{typography.body-sm-strong}"
-    padding: "{spacing.md} {spacing.xl}"
+    textColor: "{colors.body}"
+    typography: "{typography.body-md}"
+    borderColor: "{colors.hairline}"
+    padding: "{spacing.sm} {spacing.lg}"
   nav-link:
-    textColor: "{colors.ink}"
-    typography: "{typography.body-sm-strong}"
+    textColor: "{colors.body}"
+    typography: "{typography.body-md}"
+    rounded: "{rounded.full}"
+    padding: "{spacing.xs} {spacing.sm}"
   button-primary:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.on-primary}"
-    typography: "{typography.button-md}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.md} {spacing.xl}"
+    typography: "{typography.button-lg}"
+    rounded: "{rounded.pill}"
+    padding: "0px 14px"
   button-secondary:
-    backgroundColor: "{colors.canvas-soft}"
+    backgroundColor: "{colors.canvas-elevated}"
+    textColor: "{colors.ink}"
+    typography: "{typography.button-lg}"
+    rounded: "{rounded.pill}"
+    padding: "0px 14px"
+  button-primary-sm:
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.on-primary}"
+    typography: "{typography.button-md}"
+    rounded: "{rounded.sm}"
+    padding: "0px 6px"
+  button-ghost-sm:
+    backgroundColor: "{colors.canvas-elevated}"
+    textColor: "{colors.ink}"
+    borderColor: "{colors.hairline}"
+    typography: "{typography.button-md}"
+    rounded: "{rounded.sm}"
+    padding: "0px 6px"
+  button-category-pill:
+    backgroundColor: "{colors.canvas-elevated}"
     textColor: "{colors.ink}"
     typography: "{typography.button-md}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.md} {spacing.xl}"
-  button-tertiary:
-    backgroundColor: "{colors.canvas}"
-    textColor: "{colors.ink}"
-    borderColor: "{colors.ink}"
-    typography: "{typography.button-md}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.md} {spacing.xl}"
+    rounded: "{rounded.pill-category}"
+    padding: "0px 16px"
   button-icon-circular:
-    backgroundColor: "{colors.canvas}"
+    backgroundColor: "{colors.canvas-elevated}"
     textColor: "{colors.ink}"
+    borderColor: "{colors.hairline}"
+    typography: "{typography.body-lg}"
     rounded: "{rounded.full}"
-    padding: "{spacing.sm}"
+    padding: "0px"
   text-input:
-    backgroundColor: "{colors.canvas}"
+    backgroundColor: "{colors.canvas-elevated}"
     textColor: "{colors.ink}"
-    borderColor: "{colors.ink}"
+    borderColor: "{colors.hairline}"
+    typography: "{typography.body-md}"
+    rounded: "{rounded.sm}"
+    padding: "{spacing.xs} {spacing.sm}"
+  feature-card:
+    backgroundColor: "{colors.canvas-elevated}"
+    textColor: "{colors.ink}"
+    borderColor: "{colors.hairline}"
     typography: "{typography.body-md}"
     rounded: "{rounded.md}"
-    padding: "{spacing.md} {spacing.lg}"
-  card-content:
+    padding: "{spacing.lg}"
+  feature-card-elevated:
+    backgroundColor: "{colors.canvas-elevated}"
+    textColor: "{colors.ink}"
+    borderColor: "{colors.hairline}"
+    typography: "{typography.body-md}"
+    rounded: "{rounded.md}"
+    padding: "{spacing.lg}"
+  pricing-card:
+    backgroundColor: "{colors.canvas-elevated}"
+    textColor: "{colors.ink}"
+    borderColor: "{colors.hairline}"
+    typography: "{typography.body-md}"
+    rounded: "{rounded.lg}"
+    padding: "{spacing.xl}"
+  code-block:
+    backgroundColor: "{colors.canvas-elevated}"
+    textColor: "{colors.ink}"
+    borderColor: "{colors.hairline}"
+    typography: "{typography.code}"
+    rounded: "{rounded.md}"
+    padding: "{spacing.md}"
+  logo-strip:
     backgroundColor: "{colors.canvas}"
-    textColor: "{colors.ink}"
+    textColor: "{colors.mute}"
     typography: "{typography.body-md}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.xl}"
-  card-feature-sage:
-    backgroundColor: "{colors.canvas-soft}"
-    textColor: "{colors.ink}"
-    typography: "{typography.body-md}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.xl}"
-  card-feature-green:
-    backgroundColor: "{colors.primary-pale}"
-    textColor: "{colors.ink}"
-    typography: "{typography.body-md}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.xl}"
-  card-feature-dark:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.primary}"
-    typography: "{typography.body-md}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.xl}"
+    padding: "{spacing.xl} {spacing.lg}"
   hero-band:
-    backgroundColor: "{colors.canvas-soft}"
-    textColor: "{colors.ink}"
-    typography: "{typography.display-mega}"
-    padding: "{spacing.3xl} {spacing.xl}"
-  hero-band-dark:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.primary}"
-    typography: "{typography.display-mega}"
-    padding: "{spacing.3xl} {spacing.xl}"
-  content-band:
     backgroundColor: "{colors.canvas}"
     textColor: "{colors.ink}"
-    typography: "{typography.display-md}"
-    padding: "{spacing.3xl} {spacing.xl}"
-  currency-converter-card:
+    typography: "{typography.display-xl}"
+    padding: "{spacing.section} {spacing.lg}"
+  cta-band:
     backgroundColor: "{colors.canvas}"
     textColor: "{colors.ink}"
-    borderColor: "{colors.ink}"
-    typography: "{typography.body-md}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.xl}"
-  badge-positive:
-    backgroundColor: "{colors.primary-pale}"
-    textColor: "{colors.positive-deep}"
-    typography: "{typography.body-sm-strong}"
-    rounded: "{rounded.pill}"
-    padding: "{spacing.xs} {spacing.md}"
-  badge-negative:
-    backgroundColor: "{colors.negative-bg}"
-    textColor: "{colors.on-primary}"
-    typography: "{typography.body-sm-strong}"
-    rounded: "{rounded.pill}"
-    padding: "{spacing.xs} {spacing.md}"
+    typography: "{typography.display-xl}"
+    padding: "{spacing.4xl} {spacing.lg}"
   footer:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.canvas-soft}"
-    typography: "{typography.body-sm}"
-    padding: "{spacing.3xl} {spacing.xl}"
-
-  # ─── Examples (illustrative) — auto-derived; resolve any TO_FILL markers below ───
-  ex-pricing-tier:
-    description: "Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface."
-    backgroundColor: "{colors.canvas-soft}"
-    textColor: "{colors.ink}"
-    borderColor: "{colors.mute}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.xl}"
-  ex-pricing-tier-featured:
-    description: "Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode)."
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.on-primary}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.xl}"
-  ex-product-selector:
-    description: "What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery)."
-    backgroundColor: "{colors.canvas-soft}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.xl}"
-  ex-cart-drawer:
-    description: "Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart)."
     backgroundColor: "{colors.canvas}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.xl}"
-    item-divider: "{colors.canvas-soft}"
-  ex-app-shell-row:
-    description: "Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator."
-    backgroundColor: "{colors.canvas}"
-    activeIndicator: "{colors.primary}"
-    rounded: "{rounded.sm}"
-    padding: "{spacing.md} {spacing.lg}"
-  ex-data-table-cell:
-    description: "Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm."
-    headerBackground: "{colors.canvas-soft}"
-    headerTypography: "{typography.caption}"
-    bodyTypography: "{typography.body-sm}"
-    cellPadding: "{spacing.md} {spacing.lg}"
-    rowBorder: "{colors.canvas-soft}"
-  ex-auth-form-card:
-    description: "Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside."
-    backgroundColor: "{colors.canvas-soft}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.xl}"
-  ex-modal-card:
-    description: "Modal dialog surface — same chrome as feature-card with elevated shadow."
-    backgroundColor: "{colors.canvas}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.xl}"
-  ex-empty-state-card:
-    description: "Empty-state illustration frame."
-    backgroundColor: "{colors.canvas-soft}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.3xl}"
-    captionTypography: "{typography.body-md}"
-  ex-toast:
-    description: "Toast notification surface — feature-card shape + medium shadow."
-    backgroundColor: "{colors.canvas}"
-    rounded: "{rounded.xl}"
-    padding: "{spacing.md} {spacing.lg}"
-    typography: "{typography.body-sm}"
+    textColor: "{colors.body}"
+    typography: "{typography.body-md}"
+    borderColor: "{colors.hairline}"
+    padding: "{spacing.3xl} {spacing.lg}"
 
 ---
 
 
 ## Overview
 
-Wise — the global money-transfer brand — wears its identity in a single signature pairing: a vivid lime-green `{colors.primary}` (`#9fe870`) used as the CTA pill and brand accent, set against a pale sage-tinted canvas `{colors.canvas-soft}` (`#e8ebe6`) that runs across the hero band, and a near-black ink `{colors.ink}` (`#0e0f0c`) with a hint of warmth from the brand's underlying olive cast. The brand reads more like a calm Scandinavian magazine than a bank — generous whitespace, large rounded cards, and an unusually heavy display sans set at weight 900 carrying every hero headline.
+Vercel's Geist system is an exercise in subtraction. The page is a near-white sheet (`{colors.canvas}` — #fafafa) carrying near-black ink (`{colors.ink}` — #171717), and almost nothing else competes. Headings, body copy, primary buttons, and the thin 1px borders that define every card all draw from the same ink-and-grey ladder. The one place color is allowed to exist is the hero, where a soft multi-stop **mesh gradient** — cyan, blue, violet, magenta, amber — blooms behind or beside the headline as the brand's entire decorative system. Everywhere else, restraint.
 
-Display typography is the second decisive voice. The proprietary `Wise Sans` family carries hero displays at weight 900 in scales from 64 px up to 126 px on the largest hero. The brand pairs Wise Sans 900 with Inter at weight 600 for sub-displays — the contrast between the chunky proprietary face and Inter's neutrality creates a particular hierarchy: Wise Sans for the brand moment, Inter for everything else.
+Typography does the heavy lifting. **Geist Sans** sets the display headline in tightly-tracked weight-600 (the hero h1 runs -2.4px letter-spacing), and **Geist Mono** appears as small uppercase eyebrows labeling sections like a technical spec sheet. Buttons split into two shapes by context: the marketing CTAs are fully rounded black **pills** (`{rounded.pill}` — 100px, "Start Deploying" / "Get a Demo"), while nav and in-app controls use a tight 6px square (`{rounded.sm}`, "Sign Up" / "Log In"). The contrast between the rounded marketing pill and the square app button is itself a deliberate signal of which surface you're on.
 
-Cards are universally pill-rounded — `{rounded.xl}` 24 px is the brand's signature card radius. Buttons take the same 24 px pill-rectangle shape. The brand never uses sharp corners on UI elements; the visual softness is part of the friendly fintech voice.
+Surfaces barely lift. Cards are white (`{colors.canvas-elevated}`) on the #fafafa canvas, separated by a 1px hairline (`{colors.hairline}` — #ebebeb) and, at most, a whisper-soft layered shadow. Feature sections are built from precise grids of these hairline cards, often holding thin node-graph or code-editor illustrations rendered in the same ink-on-white palette. The page reads like documentation that happens to be selling something — engineered, exact, and confident enough to let a single gradient be the only flourish.
 
 **Key Characteristics:**
-- A single lime-green CTA accent `{colors.primary}` (`#9fe870`) — the brand's universal primary action color. No second accent.
-- Two-face display typography — Wise Sans (proprietary, weight 900, hero scale) + Inter (weight 600, sub-display scale). The contrast is the brand's typographic story.
-- `{rounded.xl}` 24 px is the canonical card and button radius. Generous, friendly.
-- Sage-tinted canvas `{colors.canvas-soft}` (`#e8ebe6`) is the brand's hero surface; white `{colors.canvas}` is reserved for cards within the sage band.
-- A full semantic palette: positive green family, warning yellow family, negative red family — each documented with content / hover / active variants for in-product use.
-- Currency-converter card on the hero — the brand's signature interactive component, hosting from/to amount inputs.
+- A single near-black ink (`{colors.ink}`) carries headings, body, primary CTAs, and borders on a near-white canvas (`{colors.canvas}`) — near-zero chromatic chrome.
+- The multi-stop mesh gradient (cyan → blue → violet → magenta → amber) is the entire decorative system, confined to the hero.
+- Two button shapes by context: rounded black **pills** (`{rounded.pill}`) for marketing CTAs, tight 6px squares (`{rounded.sm}`) for nav/app controls.
+- Geist Sans for tightly-tracked display type (`{typography.display-xl}` at -2.4px), Geist Mono for uppercase technical eyebrows (`{typography.mono-eyebrow}`).
+- Hairline-bordered white cards (`{colors.hairline}` on `{colors.canvas-elevated}`) in precise grids; depth via 1px border + whisper shadow, never heavy elevation.
+- The classic Vercel gradient trio (develop/preview/ship) survives as a named accent system: `{colors.gradient-develop-start}`→end, preview, ship.
+- Color-block page rhythm: white hero with mesh gradient → logo strip → hairline feature-card grid → code-editor band → template cards → black-text CTA band → grey footer.
 
 ## Colors
 
+> Source pages analyzed: the home page, the AI Gateway page, the customers page, and the pricing page. The ink/canvas/hairline trio recurs on every page; the accent blue (`{colors.link}`) surfaces on pricing, and the mesh-gradient stops live in the hero.
+
 ### Brand & Accent
-- **Wise Green** (`{colors.primary}` — `#9fe870`): The brand's universal CTA color. Every primary button, every "Send money" pill, the brand's logo accent.
-- **Wise Green Hover** (`{colors.primary-active}` — `#cdffad`): The lighter green for active state.
-- **Wise Green Neutral** (`{colors.primary-neutral}` — `#c5edab`): A mid-saturation green used as a neutral active fill.
-- **Wise Green Pale** (`{colors.primary-pale}` — `#e2f6d5`): The lightest green for soft surface tints / badge backgrounds.
+- **Ink** (`{colors.primary}` / `{colors.ink}` — #171717): the brand's defining near-black. Headings, primary CTA fill, logo, and the darkest text tier. Paired with `{colors.on-primary}` (white).
+- **Vercel Blue** (`{colors.link}` — #0070f3): the link and accent blue — inline links, pricing highlights, focus signals. Darker press tone `{colors.link-deep}` (#0761d1), pale wash `{colors.link-soft}` (#d3e5ff).
+- **Violet** (`{colors.violet}` — #7928ca), **Cyan** (`{colors.cyan}` — #50e3c2), **Pink** (`{colors.pink}` — #ff0080), **Magenta** (`{colors.magenta}` — #eb367f): the chromatic accent family, used sparingly for illustration accents and as mesh-gradient stops, never as chrome fills.
 
 ### Surface
-- **Canvas** (`{colors.canvas}` — `#ffffff`): Pure white for card interiors.
-- **Canvas Soft** (`{colors.canvas-soft}` — `#e8ebe6`): The sage-tinted page background. Defining mood of the brand.
+- **Canvas** (`{colors.canvas}` — #fafafa): the default page background — the near-white sheet everything sits on.
+- **Elevated** (`{colors.canvas-elevated}` — #ffffff): pure white for cards, buttons, inputs, and code blocks lifted off the canvas.
+- **Hairline-Soft Surface** (`{colors.hairline-soft}` — #f2f2f2): the faintest grey fill for subtle alternating panels and inset wells.
 
 ### Text
-- **Ink** (`{colors.ink}` — `#0e0f0c`): Near-black with a hint of olive warmth — the brand's default text and headings color.
-- **Ink Deep** (`{colors.ink-deep}` — `#163300`): A deep forest-green ink used on positive-state surfaces.
-- **Body** (`{colors.body}` — `#454745`): Secondary body text.
-- **Mute** (`{colors.mute}` — `#868685`): Lowest-priority text — captions, placeholder, fine print.
+- **Ink** (`{colors.ink}` — #171717): primary headings and high-emphasis text.
+- **Body** (`{colors.body}` — #4d4d4d): standard paragraph and secondary copy, nav links.
+- **Mute** (`{colors.mute}` — #8f8f8f): lower-emphasis captions, logo-strip labels, metadata.
+- **Faint** (`{colors.faint}` — #a1a1a1): the lowest tier — placeholders, disabled labels.
+
+### Borders
+- **Hairline** (`{colors.hairline}` — #ebebeb): the 1px border on every card, input, and divider — the structural workhorse of the system.
 
 ### Semantic
-- **Positive** (`{colors.positive}` — `#2ead4b`): Success indicator.
-- **Positive Deep** (`{colors.positive-deep}` — `#054d28`): Pressed positive state.
-- **Warning** (`{colors.warning}` — `#ffd11a`): Caution indicator.
-- **Warning Deep** (`{colors.warning-deep}` — `#b86700`): Pressed warning.
-- **Warning Content** (`{colors.warning-content}` — `#4a3b1c`): Text on warning surfaces.
-- **Negative** (`{colors.negative}` — `#d03238`): Destructive / error red.
-- **Negative Deep** (`{colors.negative-deep}` — `#a72027`): Pressed destructive.
-- **Negative Darkest** (`{colors.negative-darkest}` — `#a7000d`): Highest-emphasis destructive text.
-- **Negative Bg** (`{colors.negative-bg}` — `#320707`): Dark maroon for destructive callout backgrounds.
+- **Error** (`{colors.error}` — #ee0000): validation / destructive, with a deep press tier `{colors.error-deep}` (#c50000).
+- **Warning** (`{colors.warning}` — #f5a623): caution states, with soft `{colors.warning-soft}` and deep `{colors.warning-deep}` tiers.
+- **Success** maps to `{colors.link}` (#0070f3) — the blue doubles as the positive/active signal.
 
-### Brand Accent — Tertiary
-- **Accent Orange** (`{colors.accent-orange}` — `#ffc091`): Bright peach used inside illustrative content / pricing cards.
-- **Accent Cyan** (`{colors.accent-cyan}` — `#38c8ff`): Bright sky-blue used as a tertiary illustration accent.
+### Brand Gradient
+Three named two-stop gradients form the legacy Vercel gradient identity, surviving as illustration and accent washes:
+- **Develop**: `{colors.gradient-develop-start}` (#007cf0) → `{colors.gradient-develop-end}` (#00dfd8) — blue to cyan.
+- **Preview**: `{colors.gradient-preview-start}` (#7928ca) → `{colors.gradient-preview-end}` (#ff0080) — violet to pink.
+- **Ship**: `{colors.gradient-ship-start}` (#ff4d4d) → `{colors.gradient-ship-end}` (#f9cb28) — red to amber.
+These, blended together, form the hero's multi-stop mesh.
 
 ## Typography
 
 ### Font Family
-Two faces ladder the system:
-1. **Wise Sans** — proprietary geometric sans with an unusually heavy weight 900 used for all hero displays. The face is the brand's typographic signature. Always at weight 900, never lighter on the marketing surface.
-2. **Inter** — used for sub-displays (weight 600), all body, and form labels. Loaded with `font-feature-settings: "calt"` for contextual alternates.
+The system runs entirely on **Geist** — Vercel's own type family. **Geist Sans** (with an `Arial` system fallback) sets all UI and prose; **Geist Mono** sets code, inline technical tokens, and the small uppercase section eyebrows. There is no third face. Geist Sans is a clean geometric-humanist sans; substitute **Inter** if Geist is unavailable, and **JetBrains Mono** or **IBM Plex Mono** for Geist Mono.
 
 ### Hierarchy
 
 | Token | Size | Weight | Line Height | Letter Spacing | Use |
 |---|---|---|---|---|---|
-| `{typography.display-mega}` | 126px | 900 | 107.1px | 0 | Hero stencil at maximum scale. |
-| `{typography.display-xxl}` | 96px | 900 | 81.6px | 0 | Sub-hero scale. |
-| `{typography.display-xl}` | 64px | 900 | 54.4px | 0 | Standard hero headline. |
-| `{typography.display-lg}` | 47px | 400 | 70.5px | -0.108px | Lighter sub-display. |
-| `{typography.display-md}` | 40px | 900 | 34px | 0 | Section / card headlines. |
-| `{typography.display-sm}` | 32px | 600 | 38.4px | -0.96px | Inter-rendered section headings. |
-| `{typography.display-xs}` | 24px | 600 | 31.2px | -0.48px | Sub-section displays. |
-| `{typography.body-lg}` | 20px | 400 | 30px | 0 | Lead paragraphs. |
-| `{typography.body-md}` | 16px | 400 | 24px | 0 | Default body. |
-| `{typography.body-md-strong}` | 16px | 600 | 24px | 0 | Bold inline body. |
-| `{typography.body-sm}` | 14px | 400 | 20px | 0 | Secondary body. |
-| `{typography.body-sm-strong}` | 14px | 600 | 20px | 0 | Bold caption / nav-link. |
-| `{typography.caption}` | 12px | 400 | 16px | 0 | Fine print. |
-| `{typography.button-md}` | 16px | 600 | 24px | 0 | Button label. |
+| `{typography.display-xl}` | 48px | 600 | 48px | -2.4px | Hero headline |
+| `{typography.heading-lg}` | 32px | 600 | 40px | -1.28px | Major section headings |
+| `{typography.heading-md}` | 20px | 600 | 28px | -0.4px | Sub-section / card headings |
+| `{typography.label-sm}` | 14px | 500 | 20px | -0.28px | Strong labels, nav emphasis |
+| `{typography.mono-eyebrow}` | 12px | 500 | 16px | 0 | Uppercase Geist Mono section eyebrows |
+| `{typography.body-lg}` | 16px | 400 | 24px | 0 | Lead paragraphs, large body |
+| `{typography.body-md}` | 14px | 400 | 20px | 0 | Default body, nav links, table cells |
+| `{typography.body-sm}` | 12px | 400 | 16px | 0 | Captions, footnotes, metadata |
+| `{typography.button-lg}` | 16px | 500 | 20px | 0 | Marketing pill button labels |
+| `{typography.button-md}` | 14px | 500 | 20px | 0 | Nav / app button labels |
+| `{typography.code}` | 14px | 400 | 20px | 0 | Code blocks, inline code (Geist Mono) |
 
 ### Principles
-- **Weight 900 for hero, weight 600 for everything else.** The brand's display ceiling is full-black weight; everything below is semibold.
-- **Wise Sans for the brand voice, Inter for utility.** Strict role separation.
+- Display type is defined by tight negative tracking — the larger the heading, the tighter (-2.4px at hero scale, -1.28px at section scale). Body type sits at neutral spacing.
+- Weight is binary: 600 for headings and 500 for buttons/labels; everything else is 400. There is no light or black weight, and no italic.
+- Geist Mono is reserved for two roles only — code, and the small uppercase eyebrow labels that introduce sections like spec-sheet headers.
 
 ### Note on Font Substitutes
-Wise Sans is proprietary. Open-source substitutes:
-- **Display** — *Inter* at weight 900 or *Manrope* at weight 800 / 900 captures the geometric heaviness. *Geist* weight 800 is a passable second choice.
-- **Sub-display + body** — *Inter* is the brand's actual second face.
+Geist Sans and Geist Mono are freely available (open-source, via Vercel / Google Fonts). If unavailable, **Inter** (sans) and **JetBrains Mono** (mono) are the closest open substitutes; keep heading weight at 600 and preserve the negative display tracking.
 
 ## Layout
 
 ### Spacing System
-- **Base unit**: 4 px.
-- **Tokens**: `{spacing.xxs}` 2 px · `{spacing.xs}` 4 px · `{spacing.sm}` 8 px · `{spacing.md}` 12 px · `{spacing.lg}` 16 px · `{spacing.xl}` 24 px · `{spacing.2xl}` 32 px · `{spacing.3xl}` 48 px.
-- **Section padding**: bands use `{spacing.3xl}` 48 px top/bottom on desktop.
-- **Card interior**: cards at `{spacing.xl}` 24 px.
+- **Base unit**: 4px. The scale steps 4 → 8 → 12 → 16 → 24 → 32 → 40 → 64 → 96 → 128px.
+- **Tokens**: `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.md}` 16px · `{spacing.lg}` 24px · `{spacing.xl}` 32px · `{spacing.2xl}` 40px · `{spacing.3xl}` 64px · `{spacing.4xl}` 96px · `{spacing.section}` 128px.
+- **Card interiors** sit at `{spacing.lg}`–`{spacing.xl}` (24–32px); **section bands** run `{spacing.4xl}`–`{spacing.section}` (96–128px) of vertical rhythm.
+- **Button padding** is horizontal-only — marketing pills run `0px 14px`, nav buttons `0px 6px` — with height set by line-height rather than vertical padding.
 
 ### Grid & Container
-- Marketing container centres at ~1200 px.
-- Hero: split layout (headline left, currency-converter card right) at desktop; stacked at mobile.
-- Feature grids: 2-up / 3-up at desktop.
+- Centered max-width container (~1200px) with comfortable gutters; the hero and CTA bands center their content.
+- Feature sections use 2-up, 3-up, and 4-up hairline-card grids that collapse toward 1-up on narrow widths.
+- The pricing page uses a multi-column tier grid; the customers page a logo / case-study grid.
+
+### Whitespace Philosophy
+Whitespace is structural. The near-white canvas and generous section padding do the separating work; cards are grouped by thin hairlines rather than heavy backgrounds. The page breathes — large vertical gaps between bands, tight internal rhythm inside cards.
 
 ### Responsive Strategy
 
 #### Breakpoints
-
 | Name | Width | Key Changes |
 |---|---|---|
-| Mobile | < 768px | Hero stacks; converter card full-width below headline; grids 1-up. |
-| Tablet | 768–1023px | Grids 2-up. |
-| Desktop | ≥ 1024px | Hero split; full grids. |
+| Mobile | ≤ 640px | Single-column stacks; nav → menu trigger; hero type scales down; pill CTAs go full-width |
+| Tablet | 768px | 2-up card grids; condensed nav |
+| Laptop | 1024px | 3–4-up grids; full nav row |
+| Desktop | 1200px+ | Centered max-width container, full multi-column grids |
 
 #### Touch Targets
-Buttons render ~48 px tall (12 vertical padding + 24 line). WCAG AAA at all widths.
+Marketing pill CTAs (`{components.button-primary}`) and nav buttons clear the 44px WCAG-AAA target via line-height-driven height. Circular icon buttons (`{components.button-icon-circular}`) keep adequate hit area.
+
+#### Collapsing Strategy
+The nav row collapses behind a menu trigger; multi-column hairline-card grids reflow to a single column; code-editor and node-graph illustrations scale or scroll rather than shrink illegibly; the pricing tier grid stacks vertically.
 
 #### Image Behavior
-Photography is sparse; the brand prefers illustrative SVGs and product mockups inside cards. Country flag thumbnails appear inside currency rows.
+The hero mesh gradient is a CSS/SVG composition that scales fluidly. Feature illustrations (node graphs, code editors) are vector/HTML, ink-on-white, scaling crisply. Customer logos sit in a greyscale strip. No heavy raster photography.
 
 ## Elevation & Depth
 
 | Level | Treatment | Use |
 |---|---|---|
-| Level 0 — Flat | No shadow, no border. | Default. |
-| Level 1 — Hairline on Dark | 1 px solid `{colors.ink}` border. | Tertiary outline buttons, form inputs. |
-| Level 2 — Soft Card | Implicit Level 0 white card sitting on sage canvas — the surface contrast IS the elevation. | Cards on the sage hero band. |
+| 0 — Flat | 1px hairline (`{colors.hairline}`), no shadow | Default feature cards, inputs, dividers, the canvas |
+| 1 — Whisper | Border + `0px 1px 1px rgba(0,0,0,0.04)` micro-shadow | Lightly-raised cards |
+| 2 — Floating | Layered soft shadow (`0px 2px 2px` + `0px 8px 16px -4px` low-alpha black) + inset hairline | Menus, modals, tooltips |
 
-The brand uses surface contrast (`{colors.canvas-soft}` background vs `{colors.canvas}` cards) as the primary elevation cue.
+Depth is deliberately minimal. The system prefers a crisp 1px hairline plus the near-white-on-white surface step to a shadow; when a surface floats, it uses a finely-layered, very-low-alpha shadow stack rather than a single heavy drop.
+
+### Decorative Depth
+The hero **mesh gradient** is the only atmospheric element — a soft multi-stop bloom of the brand accent colors against the white canvas. Feature illustrations (ink node-graphs, code editors) add a sense of product depth without color. No glows, no heavy gradients elsewhere.
 
 ## Shapes
 
@@ -418,127 +369,100 @@ The brand uses surface contrast (`{colors.canvas-soft}` background vs `{colors.c
 
 | Token | Value | Use |
 |---|---|---|
-| `{rounded.none}` | 0px | Full-bleed bands. |
-| `{rounded.sm}` | 8px | Inline pills, small badges. |
-| `{rounded.md}` | 12px | Form inputs, smaller chrome. |
-| `{rounded.lg}` | 16px | Mid-size cards. |
-| `{rounded.xl}` | 24px | The brand's canonical button + card radius. |
-| `{rounded.pill}` | 9999px | Status pills and full-radius accents. |
-| `{rounded.full}` | 9999px | Circular icon containers. |
+| `{rounded.none}` | 0px | Full-bleed bands, dividers |
+| `{rounded.sm}` | 6px | Nav / app buttons, inputs |
+| `{rounded.md}` | 12px | Feature cards, code blocks |
+| `{rounded.lg}` | 16px | Pricing cards, larger panels |
+| `{rounded.pill-category}` | 64px | Category-tab pills (AI Apps / Web Apps) |
+| `{rounded.pill}` | 100px | Marketing CTA pills |
+| `{rounded.full}` | 9999px | Circular icon buttons, avatars, nav ghost links |
+
+The radius language is bimodal: tight 6px squares for functional chrome, full pills for marketing CTAs and category tabs, with 12–16px on content cards in between.
+
+### Geometry
+Cards are rectangles at 12–16px radius; marketing buttons and category tabs are full pills; icon buttons and avatars are circular. Illustrations are line-weight vector graphics in ink on white.
 
 ## Components
 
-### Buttons
-
-**`button-primary`** — the lime-green CTA pill.
-- Background `{colors.primary}`, text `{colors.on-primary}`, label `{typography.button-md}`, padding `{spacing.md} {spacing.xl}`, shape `{rounded.xl}` 24 px.
-
-**`button-secondary`** — the sage-tinted secondary.
-- Background `{colors.canvas-soft}`, text `{colors.ink}`, same typography / padding / shape.
-
-**`button-tertiary`** — the white outline tertiary.
-- Background `{colors.canvas}`, text `{colors.ink}`, 1 px solid `{colors.ink}` border, same typography / padding / shape.
-
-**`button-icon-circular`** — the circular icon button.
-- Background `{colors.canvas}`, ink icon, shape `{rounded.full}`.
-
-### Cards & Containers
-
-**`card-content`** — the default white card.
-- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.xl}`, shape `{rounded.xl}`. No border, sits on sage canvas.
-
-**`card-feature-sage`** — the sage-tinted feature card.
-- Background `{colors.canvas-soft}`, text `{colors.ink}`, padding `{spacing.xl}`, shape `{rounded.xl}`.
-
-**`card-feature-green`** — the soft-green feature card.
-- Background `{colors.primary-pale}`, text `{colors.ink}`, padding `{spacing.xl}`, shape `{rounded.xl}`.
-
-**`card-feature-dark`** — the polarity-flipped dark card with green text.
-- Background `{colors.ink}`, text `{colors.primary}` (Wise green!), padding `{spacing.xl}`, shape `{rounded.xl}`. Used for promotional moments.
-
-**`currency-converter-card`** — the brand's signature interactive widget.
-- Background `{colors.canvas}`, text `{colors.ink}`, 1 px solid `{colors.ink}` border, padding `{spacing.xl}`, shape `{rounded.xl}`. Hosts from/to amount inputs + currency selectors.
-
-### Inputs & Forms
-
-**`text-input`** — the canonical text input.
-- Background `{colors.canvas}`, text `{colors.ink}`, 1 px solid `{colors.ink}` border, body in `{typography.body-md}`, padding `{spacing.md} {spacing.lg}`, shape `{rounded.md}`.
+> No hover states are documented. Each spec covers Default and (where extracted) pressed/active states. Variants live as separate `components:` entries.
 
 ### Navigation
 
-**`nav-bar`** — the sticky top nav.
-- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.md} {spacing.xl}`.
+**`nav-bar`** — top navigation
+- Background `{colors.canvas}`, bottom hairline `{colors.hairline}`, text `{colors.body}`, type `{typography.body-md}`, padding `{spacing.sm} {spacing.lg}`. Holds the black wordmark, ghost nav links, and the Sign Up / Log In buttons at right.
 
-**`nav-link`** — link items inside nav.
-- Text `{colors.ink}`, set in `{typography.body-sm-strong}`.
+**`nav-link`** — individual nav item
+- Body-grey text `{colors.body}`, type `{typography.body-md}`, fully rounded hit area `{rounded.full}`, padding `{spacing.xs} {spacing.sm}`. Transparent until interacted.
 
-**`footer`** — the dark footer band.
-- Background `{colors.ink}`, text `{colors.canvas-soft}`, padding `{spacing.3xl} {spacing.xl}`. Body in `{typography.body-sm}`.
+### Buttons
 
-### Signature Components
+**`button-primary`** — the black marketing pill ("Start Deploying", "Deploy")
+- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button-lg}`, fully rounded `{rounded.pill}` (100px), padding `0px 14px`.
 
-**`hero-band`** — the sage-canvas hero band.
-- Background `{colors.canvas-soft}`, text `{colors.ink}`, padding `{spacing.3xl} {spacing.xl}`. Headline in `{typography.display-mega}` (Wise Sans weight 900).
+**`button-secondary`** — the white marketing pill ("Get a Demo")
+- Background `{colors.canvas-elevated}`, text `{colors.ink}`, type `{typography.button-lg}`, rounded `{rounded.pill}`, padding `0px 14px`. Same pill shape as primary, inverted fill.
 
-**`hero-band-dark`** — the polarity-flipped dark hero.
-- Background `{colors.ink}`, text `{colors.primary}` (Wise green headline on near-black!), same padding / scale.
+**`button-primary-sm`** — the compact black nav CTA ("Sign Up")
+- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button-md}`, tight square `{rounded.sm}` (6px), padding `0px 6px`.
 
-**`content-band`** — the white content band that follows hero.
-- Background `{colors.canvas}`, text `{colors.ink}`, padding `{spacing.3xl} {spacing.xl}`. Section headline in `{typography.display-md}`.
+**`button-ghost-sm`** — the white nav/app button ("Log In", "Ask AI")
+- Background `{colors.canvas-elevated}`, text `{colors.ink}`, 1px hairline `{colors.hairline}`, type `{typography.button-md}`, rounded `{rounded.sm}`, padding `0px 6px`.
 
-**`badge-positive`** — the positive status pill.
-- Background `{colors.primary-pale}`, text `{colors.positive-deep}`, body in `{typography.body-sm-strong}`, padding `{spacing.xs} {spacing.md}`, shape `{rounded.pill}`.
+**`button-category-pill`** — the category-tab pill ("AI Apps", "Web Apps", "Ecommerce")
+- Background `{colors.canvas-elevated}`, text `{colors.ink}`, type `{typography.button-md}`, rounded `{rounded.pill-category}` (64px), padding `0px 16px`.
 
-**`badge-negative`** — the negative status pill.
-- Background `{colors.negative-bg}`, text white, body in `{typography.body-sm-strong}`, padding `{spacing.xs} {spacing.md}`, shape `{rounded.pill}`.
+**`button-icon-circular`** — circular icon / carousel control
+- Background `{colors.canvas-elevated}`, text `{colors.ink}`, 1px hairline `{colors.hairline}`, type `{typography.body-lg}`, rounded `{rounded.full}`, no padding.
 
-### Examples (illustrative)
+### Inputs & Forms
 
-> Auto-derived kit-mirror demonstration surfaces (`scripts/derive-examples-block.mjs`). Each `ex-*` entry references brand-native primitives so downstream consumers (`/preview-design`, `/generate-kit`) re-skin the same 10 surfaces consistently. `TO_FILL` markers indicate missing primitives — resolve in the LLM judgment pass.
+**`text-input`** — default form field
+- Background `{colors.canvas-elevated}`, ink text `{colors.ink}`, 1px hairline `{colors.hairline}`, type `{typography.body-md}`, rounded `{rounded.sm}`, padding `{spacing.xs} {spacing.sm}`.
 
-**`ex-pricing-tier`** — Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.
-- Properties: `backgroundColor`, `textColor`, `borderColor`, `rounded`, `padding`
+### Cards & Containers
 
-**`ex-pricing-tier-featured`** — Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).
-- Properties: `backgroundColor`, `textColor`, `rounded`, `padding`
+**`feature-card`** — flat hairline content card
+- Background `{colors.canvas-elevated}`, 1px hairline `{colors.hairline}`, ink text `{colors.ink}`, type `{typography.body-md}`, rounded `{rounded.md}`, padding `{spacing.lg}`. The workhorse grid tile, often holding a node-graph or code illustration.
 
-**`ex-product-selector`** — What's Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).
-- Properties: `backgroundColor`, `rounded`, `padding`
+**`feature-card-elevated`** — lifted card variant
+- Same chrome as `feature-card` with the Level-2 floating shadow for menus / featured tiles.
 
-**`ex-cart-drawer`** — Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).
-- Properties: `backgroundColor`, `rounded`, `padding`, `item-divider`
+**`pricing-card`** — pricing tier card
+- Background `{colors.canvas-elevated}`, 1px hairline `{colors.hairline}`, ink text `{colors.ink}`, type `{typography.body-md}`, rounded `{rounded.lg}`, padding `{spacing.xl}`.
 
-**`ex-app-shell-row`** — Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.
-- Properties: `backgroundColor`, `activeIndicator`, `rounded`, `padding`
+**`code-block`** — code / terminal surface
+- Background `{colors.canvas-elevated}`, ink text `{colors.ink}`, 1px hairline `{colors.hairline}`, monospace `{typography.code}`, rounded `{rounded.md}`, padding `{spacing.md}`. Syntax rendered in the ink-and-accent palette.
 
-**`ex-data-table-cell`** — Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.
-- Properties: `headerBackground`, `headerTypography`, `bodyTypography`, `cellPadding`, `rowBorder`
+### Bands
 
-**`ex-auth-form-card`** — Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.
-- Properties: `backgroundColor`, `rounded`, `padding`
+**`logo-strip`** — customer logo band
+- Background `{colors.canvas}`, mute text `{colors.mute}`, type `{typography.body-md}`, padding `{spacing.xl} {spacing.lg}`. A greyscale row of customer wordmarks.
 
-**`ex-modal-card`** — Modal dialog surface — same chrome as feature-card with elevated shadow.
-- Properties: `backgroundColor`, `rounded`, `padding`
+**`hero-band`** — full-width hero section
+- Background `{colors.canvas}` with the mesh gradient, ink text `{colors.ink}`, display type `{typography.display-xl}`, padding `{spacing.section} {spacing.lg}`.
 
-**`ex-empty-state-card`** — Empty-state illustration frame.
-- Properties: `backgroundColor`, `rounded`, `padding`, `captionTypography`
+**`cta-band`** — end-of-page call-to-action band ("Start Deploying")
+- Background `{colors.canvas}`, ink text `{colors.ink}`, display type `{typography.display-xl}`, padding `{spacing.4xl} {spacing.lg}`, with a `{components.button-primary}` pill.
 
-**`ex-toast`** — Toast notification surface — feature-card shape + medium shadow.
-- Properties: `backgroundColor`, `rounded`, `padding`, `typography`
+### Footer
 
+**`footer`** — site footer
+- Background `{colors.canvas}`, top hairline `{colors.hairline}`, body-grey text `{colors.body}`, type `{typography.body-md}`, padding `{spacing.3xl} {spacing.lg}`. Multi-column link groups under the wordmark.
 
 ## Do's and Don'ts
 
 ### Do
-- Reserve `{colors.primary}` Wise green for every primary CTA. The lime-green pill IS the brand's conversion signature.
-- Set hero headlines in `{typography.display-mega}` / `{typography.display-xl}` Wise Sans weight 900. Never lighter.
-- Use `{rounded.xl}` 24 px for buttons and cards. The generous radius is the brand's friendliness signature.
-- Cycle page surfaces in `{colors.canvas-soft}` sage canvas → `{colors.canvas}` white cards. Surface contrast carries elevation.
-- Use the full semantic palette (positive / warning / negative) for in-product status — never repurpose Wise green as success indicator since it IS the brand CTA.
+- Keep the canvas near-white (`{colors.canvas}`) and let near-black ink (`{colors.ink}`) carry headings, CTAs, and borders — the system is a black-and-white duet.
+- Confine color to the hero mesh gradient and small illustration accents; reserve `{colors.link}` for links and focus.
+- Use the two button shapes by context: black pill (`{components.button-primary}`) for marketing CTAs, 6px square (`{components.button-primary-sm}`) for nav/app.
+- Define cards and inputs with a 1px hairline (`{colors.hairline}`) before any shadow — flat is the default.
+- Set display headings in Geist Sans 600 with tight negative tracking; label sections with uppercase Geist Mono eyebrows (`{typography.mono-eyebrow}`).
+- Step the grey text ladder deliberately: `{colors.ink}` → `{colors.body}` → `{colors.mute}` → `{colors.faint}`.
 
 ### Don't
-- Don't introduce a second brand accent. Wise green is the sole identity colour.
-- Don't render the hero in weight 700 or lighter. The brand's display weight is 900.
-- Don't render CTAs as sharp rectangles. The 24 px pill geometry is non-negotiable.
-- Don't pair the green CTA with a green background. The brand always sits Wise green on neutral surfaces (sage / white / ink).
-- Don't replace Wise Sans with a generic geometric sans for hero typography — the proprietary face IS the brand's voice.
+- Don't fill large surfaces with the accent colors — violet/cyan/pink/blue live in the gradient and illustrations, not as chrome.
+- Don't mix the button shapes within one context — marketing CTAs stay pills, app/nav controls stay 6px squares.
+- Don't pile on shadows — depth is a 1px hairline plus, at most, a finely-layered low-alpha shadow stack.
+- Don't set body copy in pure black (`#000000`) — the brand's ink is #171717 and body steps to `{colors.body}`.
+- Don't add a second decorative system — the mesh gradient is the only flourish; everything else is ink on white.
+- Don't loosen the display tracking — large Geist headings carry tight negative letter-spacing by design.
