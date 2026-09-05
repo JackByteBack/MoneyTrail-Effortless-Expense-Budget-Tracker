@@ -18,6 +18,12 @@ export interface Transaction {
   date: string;
   created_at: string;
   category?: Category | null;
+  payment_method?: string | null;
+  merchant?: string | null;
+  tags?: string[] | null;
+  receipt_url?: string | null;
+  is_recurring?: boolean | null;
+  recurring_frequency?: "weekly" | "monthly" | "yearly" | null;
 }
 
 export interface Budget {
